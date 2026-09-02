@@ -6,6 +6,9 @@ Designed without default boilerplate to demonstrate clean architecture, custom u
 
 ---
 
+## Live Link: https://auth-asp-net.onrender.com/
+
+
 ## Tech Stack & Architecture
 
 * **Framework:** ASP.NET Core 10.0 MVC (Server-Side Rendered Razor Views)
