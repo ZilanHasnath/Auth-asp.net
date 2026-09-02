@@ -1,0 +1,30 @@
+@model dotnet.Models.User
+@{
+    Layout = null;
+    ViewData["Title"] = "Profile";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-md text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">User Profile</h2>
+        
+        <div class="bg-gray-50 p-4 rounded-lg border text-left space-y-2 mb-6">
+            <p><span class="font-semibold text-gray-700">User ID:</span> <span class="text-gray-600">@Model.Id</span></p>
+            <p><span class="font-semibold text-gray-700">Name:</span> <span class="text-gray-600">@Model.Name</span></p>
+            <p><span class="font-semibold text-gray-700">Age:</span> <span class="text-gray-600">@Model.Age</span></p>
+            <p><span class="font-semibold text-gray-700">Email:</span> <span class="text-gray-600">@Model.Email</span></p>
+        </div>
+
+        <form asp-action="Logout" asp-controller="Login" method="post">
+            <button type="submit" class="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 font-medium">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

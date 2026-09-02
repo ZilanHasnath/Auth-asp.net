@@ -1,0 +1,17 @@
+## Build and output directories
+bin/
+obj/
+out/
+
+## User-specific and IDE settings
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Sensitive config files
+appsettings.Development.json
+appsettings.Secrets.json
+.env
